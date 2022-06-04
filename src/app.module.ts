@@ -7,7 +7,7 @@ import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://localhost/auth-api-v1'),
+    MongooseModule.forRoot(process.env.DATABASE_CONNECTION_ON_LINE),
     UserModule,
     AuthModule,
   ],
@@ -15,4 +15,3 @@ import { AuthModule } from './auth/auth.module';
   providers: [AppService],
 })
 export class AppModule {}
-// mongodb+srv://admin:yjK5lNtryh0JpuIC@test-nestjs-api.hubsmwm.mongodb.net/auth-api-v1
