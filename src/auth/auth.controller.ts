@@ -13,7 +13,7 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
-import { UserService } from 'src/user/user.service';
+import { UserService } from 'src/modules/user/user.service';
 import { ApiBearerAuth } from '@nestjs/swagger';
 
 @Controller('auth')

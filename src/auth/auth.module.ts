@@ -1,11 +1,11 @@
 import { ConfigService } from '@nestjs/config';
-import { User, UserSchema } from './../user/schemas/user.schema';
-import { UserRepository } from './../user/user.repository';
-import { UserService } from './../user/user.service';
+import { User, UserSchema } from '../modules/user/schemas/user.schema';
+import { UserRepository } from '../modules/user/user.repository';
+import { UserService } from '../modules/user/user.service';
 import { jwtConfig } from './../config/jwt.config';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { LocalStrategy } from './strategies/local.strategy';
-import { UserModule } from './../user/user.module';
+import { UserModule } from '../modules/user/user.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { JwtService, JwtModule } from '@nestjs/jwt';
 import { forwardRef, Module } from '@nestjs/common';
