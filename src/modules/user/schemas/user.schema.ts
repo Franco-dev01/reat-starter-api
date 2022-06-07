@@ -28,7 +28,7 @@ export class User {
   email: string;
 
   @ApiProperty()
-  @Prop({ enum: UserRoles, default: UserRoles.MEMBER })
+  @Prop({ Type: UserRoles, enum: [UserRoles], default: UserRoles.MEMBER })
   role: string;
 
   @ApiProperty()
